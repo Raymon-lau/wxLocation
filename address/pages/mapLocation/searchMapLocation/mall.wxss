@@ -1,0 +1,181 @@
+/* pages/mall/mall.wxss */
+
+page{
+ /*height:100%;*/
+ background:#efefef;
+ width:100%;
+ padding-top: 96rpx;
+}
+
+.mallTable{
+  background: #eeeeee;
+  min-height: 100%;
+}
+
+.mallSearch{
+  display: flex;
+  flex-direction: row;
+  font-size: 28rpx;
+  position: fixed;
+  color: #666666;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #eeeeee;
+}
+
+.inputSearch{
+  background: white url(http://img.tianxiahuo.cn/public/NetFile/20170711/f7f5ff992ac9a9e81fac03541ae6b6c.png) no-repeat 25% center;
+  background-size: 30rpx;
+  width: 80%;
+  height: 60rpx;
+  margin-left: 30rpx;
+  margin-top: 18rpx;
+  margin-bottom: 18rpx;
+  line-height: 60rpx;
+  border-radius: 5rpx
+}
+
+.inputSearch text{
+  padding-left: 30%;
+  color: #666666;
+}
+
+.scanImage image{
+  padding-left: 35rpx;
+  padding-top: 25rpx;
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.mallCell{
+  display: flex;
+  flex-direction: row;
+  background: white;
+  margin-bottom: 20rpx;
+}
+
+.shopAvatar{
+  border:solid 1px #ccc;
+  padding:10rpx;
+  margin-top: 20rpx;
+  margin-left: 30rpx;
+  border-radius: 2rpx;
+  height: 110rpx;
+}
+
+.shopAvatar image{
+  width: 110rpx;
+  height: 110rpx;
+  border-radius: 10rpx;
+}
+
+.mallBase-info{
+  margin-left: 30rpx;
+  line-height: 35rpx;
+  width: 70%;
+  padding-bottom: 10rpx;
+}
+
+.shopTitle{
+  color: #333333;
+  font-size: 30rpx;
+  padding-top: 28rpx;
+  /*行间距*/
+  /*line-height: 10rpx;*/
+}
+
+.shopContact{
+  color: #666666;
+  font-size: 28rpx;
+  padding-top: 10rpx;
+  /*行间距*/
+  /*line-height: 10rpx;*/
+}
+
+.startNum{
+  color: #666666;
+  font-size: 28rpx;
+  padding-top: 10rpx;
+  /*行间距*/
+  padding-bottom: 15rpx; 
+}
+
+.startNum text:last-child{
+  color: #E75858;
+}
+
+.activity:first-child{
+  border-top: 1rpx solid #ccc;
+}
+
+.activity image{
+  width: 40rpx;
+  height: 40rpx;
+  padding-top: 10rpx;
+  border-radius: 10rpx;
+  display: block;
+  float: left;
+}
+
+.activity text{
+  color: #888888;
+  font-size: 24rpx;
+  padding-top: 5rpx;
+  padding-left: 10rpx;
+  display: block;
+  line-height: 50rpx;
+  float: left;
+  width: 80%;
+  overflow:hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.coupon{position:fixed;width:526rpx;top:50%;z-index:9999;left:50%;margin-left:-263rpx;transform: translateY(-50%);}
+.coupon image{width:461rpx;height:330rpx;margin:0 auto;display:block;}
+.coupon image.close{width:60rpx;height:60rpx;margin-top:20rpx;}
+.coupon_list{
+ background:#E75757;
+ padding:36rpx 0;
+ border-radius:10rpx;
+}
+.coupon_detail{
+  width:482rpx;
+  height:140rpx;
+  background:url(http://img.tianxiahuo.cn/public/NetFile/20170714/cd722d2ff3f1ddb2fa4c657ecc539.png) center center #E75757;
+  background-size:482rpx 140rpx;
+  margin:0 auto;
+  margin-bottom:20rpx;
+}
+.coupon_detail>text{display:block;text-indent:30rpx;line-height:70rpx;}
+.coupon_detail>text .fr{margin-right:30rpx;}
+.coupon_list navigator{
+  width:240rpx;
+  height:60rpx;
+  margin:0 auto;
+  line-height:60rpx;
+  color:#E75858;
+  text-align:center;
+  background:#fff;
+  border-radius: 5rpx;
+  font-size:26rpx;
+}
+.coupon_detail>text:nth-child(2){
+  font-size:24rpx;
+  color:#666;
+}
+.coupon_detail>text:nth-child(1){
+  font-size:26rpx;
+  color:#000;
+}
+.coupon_detail>text:nth-child(1) .fr{
+  font-size:37rpx;
+  color:#E75858;
+}
+.coupon_detail>text:nth-child(1) .fr .small{
+  font-size:26rpx;
+  color:#E75858;
+} 
+.noData image{width:144rpx;height:156rpx;}
+.noData text{width:500rpx;display:block;margin:0 auto;}

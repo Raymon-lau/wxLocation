@@ -1,0 +1,208 @@
+/**app.wxss**/
+
+page {
+  display: block;
+  color: #333;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+page {
+  /*height:100%;*/
+  background: #fff;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+#fixedBg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 98;
+  background: #000;
+  opacity: 0.6;
+}
+
+.headTab {
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+  background-color: #fff;
+  z-index: 999;
+}
+
+.headTab span {
+  flex: 1;
+  border-bottom: solid 2.4rpx #fff;
+  text-align: center;
+  color: #333;
+  font-size: 29rpx;
+  height: 72rpx;
+  line-height: 72rpx;
+}
+
+.headTab span.showMenu {
+  border-bottom-color: #e6636c;
+  color: #e6636c;
+}
+
+.navigator-hover {
+  background: none;
+  opacity: 1;
+}
+
+.noData {
+  display: block;
+  width: 100%;
+  background: none;
+  text-align: center;
+  padding-top: 120rpx;
+  color: #666;
+  font-size: 29rpx;
+}
+
+.noData image {
+  display: block;
+  margin: 29rpx auto;
+  width: 157rpx;
+  height: 114rpx;
+}
+
+/*color  */
+
+.fontColor333 {
+  color: #333;
+}
+
+.fontColor666 {
+  color: #666;
+}
+
+.fontColor999 {
+  color: #999;
+}
+
+.fontLineColor {
+  color: #e0e3eb;
+}
+
+.fontThemeColor {
+  color: #eee;
+}
+
+.fontRedColor {
+  color: #e75858;
+}
+
+.fontBlueColor {
+  color: #4777e5;
+}
+
+.searchView {
+  display: flex;
+  font-size: 28rpx;
+  width: 100%;
+  background: #eee;
+  color: #666;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 97;
+}
+
+/* 搜索框+搜索按钮 */
+
+.searchView view {
+  margin-top: 18rpx;
+  margin-left: 3%;
+  display: block;
+  float: left;
+  width: 60rpx;
+  height: 60rpx;
+  background: #fff;
+}
+
+.searchView view image {
+  width: 30rpx;
+  height: 30rpx;
+  margin: 0 auto;
+  margin-top: 15rpx;
+  display: block;
+}
+
+.searchBar {
+  width: 100%;
+  background: white url(http://img.tianxiahuo.cn/public/NetFile/20170715/d5a21638e138fa8f6b17fdb1fe4a49fb.png) no-repeat 30% center;
+  text-align: center;
+  border-radius: 5rpx;
+  margin-top: 18rpx;
+  margin-bottom: 18rpx;
+  background-size: 30rpx;
+  height: 60rpx;
+  margin-left: 3%;
+}
+
+.searchBarInput {
+  background: white;
+  text-align: left;
+  background-size: 29rpx;
+  /* padding-left:50rpx; */
+  margin-left: 0;
+}
+
+.searchView button {
+  height: 60rpx;
+  background-color: #eee;
+  width: 24%; 
+  /* width: 24%; */
+  line-height: 60rpx;
+  margin: 18rpx 0;
+  color: black;
+   font-size: 28rpx; 
+  border-color: #eee;
+}
+
+button::after {
+  border: 0;
+}
+
+/*搜索view  */
+
+.frisearch {
+  height: 60rpx;
+  background: #eee;
+  padding: 18rpx 2.5%;
+  width: 95%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 97;
+}
+
+.frisearch label {
+  display: block;
+  height: 60rpx;
+  line-height: 60rpx;
+  background-color: white;
+  color: #666;
+  text-align: center;
+  background: #fff url(http://img.tianxiahuo.cn/public/NetFile/20170715/d5a21638e138fa8f6b17fdb1fe4a49fb.png) no-repeat 40% center;
+  background-size: 30rpx;
+  font-size: 28rpx;
+}

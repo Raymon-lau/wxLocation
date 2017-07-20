@@ -1,0 +1,17 @@
+/* mallsearch.wxss */
+@import "mall.wxss";
+
+.searchTable{
+  background: #eeeeee;
+  min-height: 100%;
+}
+
+.mallSearch image{
+  width:  30rpx;
+  height: 30rpx;
+}
+.searchView button{
+  width: 150rpx;
+} 
+
+ button::after{border:0;} 

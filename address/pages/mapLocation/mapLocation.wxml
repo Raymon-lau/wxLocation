@@ -1,0 +1,31 @@
+<!--mapLocation.wxml-->
+
+<!--搜索-->
+<view class="mapSearch">
+<view class="inputSearch" bindtap="bindSearchTap">
+      <text>街道/大厦/小区</text>
+    </view>
+</view>
+
+<!-- 地图 -->
+<view class="mapView">
+  <map id="myMap" longitude="{{currentLon}}" latitude="{{currentLat}}" scale="16" markers="{{markers}}" bindmarkertap="markertap" show-location style="width: 100%; height: 600rpx" />
+</view>
+
+<!-- 列表 -->
+<view class="addressListView">
+  <block wx:for="{{addressList}}">
+    <view class="addressCell" bindtap="didSelectCell" data-id="{{index}}">
+
+      <view class="address">
+        <text hidden="{{index != 0}}">[ 当前 ]</text>
+        <text>{{item.ad_info.province + item.ad_info.city + item.ad_info.district}}</text>
+      </view>
+
+      <view class="detail">
+        <text>{{item.title}}</text>
+      </view>
+    </view>
+  </block>
+
+</view>

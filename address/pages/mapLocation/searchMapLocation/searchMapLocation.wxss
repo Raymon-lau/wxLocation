@@ -1,0 +1,23 @@
+/* searchMapLocation.wxss */
+@import "mallsearch.wxss";
+page{
+ /*height:100%;*/
+ background:#efefef;
+ width:100%;
+ padding-top: 96rpx;
+}
+.addressCell{
+  background-color: white;
+  padding: 10rpx 20rpx 10rpx 20rpx;
+  margin-bottom: 5rpx;
+}
+
+.address text{
+  font-size: 30rpx;
+  color: #000000;
+}
+
+.detail text{
+  font-size: 27rpx;
+  color: #666666;
+}

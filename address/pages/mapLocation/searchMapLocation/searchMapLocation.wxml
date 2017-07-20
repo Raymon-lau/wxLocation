@@ -1,0 +1,28 @@
+<!--searchMapLocation.wxml-->
+<view class="searchTable">
+
+  <view class="searchView">
+    <view wx:if="{{istext}}">
+      <image src="http://img.tianxiahuo.cn/public/NetFile/20170715/d5a21638e138fa8f6b17fdb1fe4a49fb.png"></image>
+    </view>
+    <input class="{{istext?'searchBar searchBarInput':'searchBar'}}" bindinput="bindKeyInput" placeholder="街道/大厦/小区" confirm-type="search" maxlength="100" bindconfirm="clickSearch" bindfocus="clickSearchView" bindblur="loseInputBlur" focus="true"/>
+    <button bindtap="clickSearch" hover-class="btnClick">搜索</button>
+  </view>
+
+  <!-- 列表 -->
+  <view class="addressListView">
+    <block wx:for="{{tips}}">
+      <view class="addressCell" bindtap="didSelectCell" data-index="{{index}}">
+
+        <view class="address">
+          <text>{{item.city + (item.district == undefined?'':item.district)}}</text>
+        </view>
+
+        <view class="detail">
+          <text>{{item.title}}</text>
+        </view>
+      </view>
+    </block>
+
+  </view>
+</view>

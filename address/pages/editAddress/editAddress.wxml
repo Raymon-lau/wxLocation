@@ -1,0 +1,31 @@
+<!--editAddress.wxml-->
+<view class="editAddressView">
+
+  <view class="nameView">
+    <text>收货人姓名</text>
+    <input placeholder="点击输入收货人姓名" placeholder-style="color:#e0e3eb" value="{{name}}"  bindblur="inputName" />
+  </view>
+
+  <view class="contactView">
+    <text>联系电话</text>
+    <input placeholder="点击输入手机号" placeholder-style="color:#e0e3eb" value="{{contact}}" bindblur="inputContact"/>
+  </view>
+
+  <view class="provinceView" bindtap="chooseProvince">
+    <text>省/市/区</text>
+    <text>{{address}}</text>
+  </view>
+
+  <view class="detailAddressView">
+    <text>详细地址</text>
+    <input placeholder="点击输入详细地址" placeholder-style="color:#e0e3eb" value="{{detailAddress}}" bindblur="inputDetail"/>
+  </view>
+
+  <view class="defaultAddressView">
+    <text>设为默认收货地址</text>
+    <switch type="switch" bindchange="changeAddressStatus" checked = "{{isDefaultAddress == '1' ? true : false}}"/>
+  </view>
+
+</view>
+
+<view class="saveAddress"><button bindtap="saveAddress">保存</button></view>

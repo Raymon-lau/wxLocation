@@ -1,0 +1,32 @@
+{
+  "pages": [
+    "pages/editAddress/editAddress",
+    "pages/mapLocation/mapLocation",
+    "pages/mapLocation/searchMapLocation/searchMapLocation"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "map",
+    "navigationBarTextStyle": "black",
+    "backgroundColor":"#eeeeee"
+  },
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#e24242",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/editAddress/editAddress",
+        "iconPath": "images/address_gray.png",
+        "selectedIconPath": "images/address_red.png",
+        "text": "地址"
+      },{
+        "pagePath": "pages/editAddress/editAddress",
+        "iconPath": "images/address_gray.png",
+        "selectedIconPath": "images/address_red.png",
+        "text": "地址"
+      }
+    ]
+  }
+}

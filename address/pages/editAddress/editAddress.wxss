@@ -1,0 +1,91 @@
+/* editAddress.wxss */
+page{
+  width: 100%;
+  background-color: #efefef;
+  padding-bottom: 150rpx;
+}
+
+.editAddressView{
+  background-color: #efefef;
+  min-height: 100%;
+}
+
+.saveAddress{
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: #eeeeee;
+}
+
+.saveAddress button{
+  margin-top: 20rpx;
+  color: white;
+  margin-bottom: 40rpx;
+  margin-left: 35rpx;
+  width: 90%;
+  background-color: #E24242 ;
+}
+
+.editAddressView>view{
+  padding:10rpx 0;
+}
+
+.editAddressView>view text{
+  color: #e75858;
+  padding: 10rpx 20rpx 10rpx 20rpx;
+  font-size: 30rpx;
+}
+
+.editAddressView>view input{
+  color: #666666;
+  padding: 10rpx 20rpx 5rpx 20rpx;
+  font-size: 30rpx;
+}
+
+.nameView{
+  background-color: white;
+  margin-top: 5rpx;
+}
+
+.contactView{
+  background-color: white;
+   margin-top: 5rpx;
+}
+
+.provinceView{
+  background: white url(http://img.tianxiahuo.cn/public/NetFile/20170710/9bc5ae1cfd6267ff19d1a93b049367e.png) no-repeat 97% center;
+  margin-top: 5rpx;
+  background-size: 25rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+
+.provinceView text:first-child{
+  color: #e75858;
+  font-size: 30rpx;
+  padding-left: 20rpx;
+  padding-top: 20rpx;
+}
+
+.provinceView text:last-child{
+  color: #666666;
+  padding-right: 80rpx;
+  float: right;
+}
+
+.detailAddressView{
+  background-color: white;
+  margin-top: 5rpx;
+}
+
+.defaultAddressView{
+  background-color: white;
+  margin-top: 5rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+
+.defaultAddressView switch{
+  float: right;
+}
+
